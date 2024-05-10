@@ -31,12 +31,12 @@ export const THEME = (theme) => {
     }else if(theme.id===THEME_SECONDARY){
         return(
             {
-                BACKGROUND : '#FAFAFA',
-                BUTTON : '#D2D2FD',
+                BACKGROUND : '#C7CFD9',
+                BUTTON : '#F7F9FA',
                 PRIMARY_TEXT : "#000000",
                 SECONDARY_TEXT : "#484B6A",
                 ACCENT : '#023E8A',
-                ACCENT_TRANSPARENT : 'rgba(97, 137, 47, 0.8)',
+                ACCENT_TRANSPARENT : 'rgba(2, 62, 138, 0.8)',
             }
         )
     }else{

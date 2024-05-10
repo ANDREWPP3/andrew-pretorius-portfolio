@@ -11,7 +11,7 @@ export default function SideBar({theme,language}){
     const [expanded,setExpanded] = useState(false);
 
     return(
-        <>
+        <div onMouseLeave={() => setExpanded(false)} onMouseEnter={() => setExpanded(true)}>
             <SideBarContainer id="sidebarcontainer" expanded={expanded} theme={theme}>
                 <SideBarOptionContainer>
                     <Link href="/">{LANGUAGE(language).home}</Link>
@@ -33,7 +33,7 @@ export default function SideBar({theme,language}){
                 </SideBarOptionContainer>
             </SideBarContainer>
             <ExpandButton expanded={expanded} setExpanded={setExpanded} theme={theme}/>
-        </>
+        </div>
     )
 
 

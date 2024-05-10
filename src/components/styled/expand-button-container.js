@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SIDE_BAR_WIDTH } from "../../util/screen-util";
 import { THEME } from "../../const/themes";
+import { SIZE } from "../../const/sizes";
 
 export const ExpandButtonContainer = styled.div`
     position: absolute;

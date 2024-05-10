@@ -8,6 +8,9 @@ import { DEFAULT_THEME, THEMES } from './const/themes';
 import Loading from './components/functional/util/loading';
 import Projects from './components/functional/screens/projects';
 import About from './components/functional/screens/about';
+import Skills from './components/functional/screens/skills';
+import Education from './components/functional/screens/education';
+import Experience from './components/functional/screens/experience';
 
 export default function App(){
   const [isLoading,setIsLoading] = useState(true);
@@ -43,9 +46,9 @@ export default function App(){
         <Route path={"/"}><Home theme={theme} setTheme={setTheme} language={language} setLanguage={setLanguage}/></Route>
         <Route path={"/projects"}><Projects theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
         <Route path={"/about"}><About theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
-        <Route path={"/skills"}><About theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
-        <Route path={"/education"}><About theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
-        <Route path={"/experience"}><About theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
+        <Route path={"/skills"}><Skills theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
+        <Route path={"/education"}><Education theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
+        <Route path={"/experience"}><Experience theme={theme} language={language} screen={screen} setScreen={setScreen}/></Route>
     </div>
   )
 }

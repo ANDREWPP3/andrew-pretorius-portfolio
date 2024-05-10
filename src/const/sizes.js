@@ -7,12 +7,16 @@ export const SIZE = {
         MD : "100px",
         SM : "50px",
         XS : "25px",
+
+        LOGO_IMG_WIDTH : "250px",
+        LOGO_IMG_HEIGHT : "170px",
     },
     SPACING : {
         XS : "2px",
         SM : "5px",
         MD : "10px",
         LG : "20px",
+        XL : "30px",
     },
     FONT : {
       HEADER : "32px" ,

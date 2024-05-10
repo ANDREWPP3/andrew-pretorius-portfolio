@@ -16,6 +16,7 @@ import { ButtonContainer } from '../../styled/button-container';
 import { THEMES } from '../../../const/themes';
 import { TitleBarContent } from '../../styled/title-bar-content';
 import Link from '../navigation/link';
+import { TypeWriter } from '../../styled/type-writer';
 
 
 export default function Introduction({theme,setTheme,language,setLanguage}){
@@ -41,10 +42,10 @@ export default function Introduction({theme,setTheme,language,setLanguage}){
                 <ContentContainerStretch theme={theme}>
                     <BufferVertical>
                         <Header theme={theme}>
-                            {LANGUAGE(language).andrews_portfolio}
+                            <TypeWriter delay={0} >{LANGUAGE(language).andrews_portfolio}</TypeWriter>
                         </Header>
                         <SubHeader theme={theme}>
-                            {LANGUAGE(language).full_stack_developer_software_engineer}
+                            <TypeWriter delay={0.5}>{LANGUAGE(language).full_stack_developer_software_engineer}</TypeWriter>
                         </SubHeader>
                     </BufferVertical>
                     <ImageContainer>
@@ -56,9 +57,9 @@ export default function Introduction({theme,setTheme,language,setLanguage}){
                         </Button>
                         <ButtonContainer className={`${isHovered ? 'show' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                             <Link href={"/about"}><Button theme={theme}>{LANGUAGE(language).about}</Button></Link>
-                            <Button theme={theme}>{LANGUAGE(language).education}</Button>
-                            <Button theme={theme}>{LANGUAGE(language).experience}</Button>
-                            <Button theme={theme}>{LANGUAGE(language).skills}</Button>
+                            <Link href={"/education"}><Button theme={theme}>{LANGUAGE(language).education}</Button></Link>
+                            <Link href={"/experience"}><Button theme={theme}>{LANGUAGE(language).experience}</Button></Link>
+                            <Link href={"/skills"}><Button theme={theme}>{LANGUAGE(language).skills}</Button></Link>
                             <Link href={"/projects"}><Button theme={theme}>{LANGUAGE(language).projects}</Button></Link>
                         </ButtonContainer>
                     </BufferVertical>

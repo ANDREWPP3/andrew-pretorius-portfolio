@@ -5,11 +5,15 @@ import { THEME } from '../../../const/themes';
 
 export default function ExpandButton({expanded, setExpanded, theme}){
     function onHandleOpen(){
-        setExpanded(!expanded);
+        setExpanded(true);
     }
+    function onHandleClose(){
+        setExpanded(false);
+    }
+
     return(
-        <ExpandButtonContainer id="expand-btn" onClick={onHandleOpen} expanded={expanded}>
-            {expanded ? <FaChevronCircleLeft size={30} color={THEME(theme).ACCENT_TRANSPARENT}/> : <FaChevronCircleRight size={30} color={THEME(theme).ACCENT_TRANSPARENT}/>}
+        <ExpandButtonContainer id="expand-btn"  onMouseEnter={onHandleOpen} expanded={expanded}>
+            {expanded ? <FaChevronCircleLeft size={40} color={THEME(theme).ACCENT_TRANSPARENT}/> : <FaChevronCircleRight size={40} color={THEME(theme).ACCENT_TRANSPARENT}/>}
         </ExpandButtonContainer>
     )
 }
