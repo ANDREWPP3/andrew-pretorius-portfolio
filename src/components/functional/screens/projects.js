@@ -30,7 +30,7 @@ export default function Projects({theme,language}){
         if(zoomImg){
             return(
                 <ContentContainerStretch>
-                    <CloseButton size={50} onClick={() => {setZoomImgIsApp(null); setZoomImg(null)}}/>
+                    <CloseButton theme={theme} size={50} onClick={() => {setZoomImgIsApp(null); setZoomImg(null)}}/>
                     <EnlargedScreenShot theme={theme} src={zoomImg} app={zoomImgIsApp}/>
                 </ContentContainerStretch>
             )

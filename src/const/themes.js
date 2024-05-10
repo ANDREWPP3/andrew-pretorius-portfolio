@@ -31,7 +31,7 @@ export const THEME = (theme) => {
     }else if(theme.id===THEME_SECONDARY){
         return(
             {
-                BACKGROUND : '#C7CFD9',
+                BACKGROUND : '#C6C6C9',
                 BUTTON : '#F7F9FA',
                 PRIMARY_TEXT : "#000000",
                 SECONDARY_TEXT : "#484B6A",
