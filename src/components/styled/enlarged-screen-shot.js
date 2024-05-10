@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { SIZE } from "../../const/sizes";
 const appear = keyframes`
     from {
         opacity : 0;
@@ -7,9 +6,8 @@ const appear = keyframes`
     to {
         opacity : 1;
     }`;
-export const ScreenShot = styled.img`
-    width : ${SIZE.COMPONENTS.XL};
-    height : ${SIZE.COMPONENTS.LG};
+export const EnlargedScreenShot = styled.img`
+    width : ${(props) => props.app ? undefined : '55%'};
+    height : ${(props) => props.app ? '75%' : undefined};
     animation: ${appear} 0.5s ease-in-out;
-    cursor : pointer;
 `

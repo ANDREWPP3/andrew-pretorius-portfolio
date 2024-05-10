@@ -9,7 +9,7 @@ export const SIZE = {
         XS : "25px",
 
         LOGO_IMG_WIDTH : "250px",
-        LOGO_IMG_HEIGHT : "170px",
+        LOGO_IMG_HEIGHT : "150px",
     },
     SPACING : {
         XS : "2px",
